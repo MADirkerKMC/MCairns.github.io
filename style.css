@@ -44,5 +44,52 @@ nav ul li a:hover::after{
   width: 100%;
 }
 /*==================================About Me Section==================================*/
+#about{
+  padding: 80px 0;
+  color: #ffffff;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.rightCol{
+  flex-basis: 55%;
+}
+.leftCol{
+  flex-basis: 45%;
+}
+.leftCol img{
+  width: 100%;
+  border-radius: 15%;
+  border-style: ridge;
+  border-color: blanchedalmond;
+}
+.sections{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.secTitles{
+  color: #341c04;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.txtInfo{
+  display: none;
+}
+.txtEdu{
+  display: none;
+}
+.txtSkills{
+  display: none;
+}
+.txtExp{
+  display: none;
+}
+
 /*==================================Projects Section==================================*/
 /*==================================Contact Section==================================*/
