@@ -47,12 +47,13 @@ nav ul li a:hover::after{
   background-color: #936734;
   cursor: pointer;
   border: double;
-  width: 20%;
+  width: 200px;
   font-size: medium;
   padding-top: 1%;
   padding-left: 2%;
   padding-right: 2%;
   padding-bottom: 1%;
+
 }
 .btnResume:hover{
   background-color: #76542A;
@@ -61,11 +62,16 @@ nav ul li a:hover::after{
 }
 .row{
   display: flex;
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .left{
   width: 50%;
   flex-wrap: wrap;
   background-color: #BAA481;
+  border: double;
+  border-radius: 5px;
 }
 .right{
   width: 50%;
@@ -73,6 +79,19 @@ nav ul li a:hover::after{
   padding-top: 1%;
   padding-left: 1%;
   padding-right: 1%;
+}
+.left p{
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  font-size: x-large;
+  color: #4B3019;
+}
+.left h2{
+  padding-left: 3%;
+  padding-top: 3%;
+  color: #000;
 }
 /*==================================About Me Section==================================*/
 #about{
@@ -123,16 +142,16 @@ nav ul li a:hover::after{
 }
 .rightCol{
   flex-basis: 55%;
-  padding-left: 5%;
-  padding-top: 5%;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 .leftCol{
   flex-basis: 45%;
-  padding-top: 5%;
+  padding-top: 10px;
 }
 .leftCol img{
   width: 100%;
-  border-radius: 15%;
+  border-radius: 10px;
   border-style: ridge;
   border-color: blanchedalmond;
 }
