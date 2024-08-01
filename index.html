@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <!-- Header Section -->
   <div id="header">
     <div class="container">
       <nav>
-        <ul>
+        <ul> <!-- Redirect user to appropriate page -->
           <li><a href = "index.html">Home</a></li>
           <li><a href = "about.html">About Me</a></li>
           <li><a href = "projects.html">Projects</a></li>
@@ -20,20 +21,21 @@
       </nav>
     </div>
   </div>
-  <div class="row">
-    <div class = "column left">
+  <div class="IRow"> <!-- Row containing three columns -->
+    <div class = "IColLeft">
     </div>
-    <div class="column middle">
-      <div class="row middleT"></div>
-      <div class="row middleM">
+    <div class="IColMid"> <!-- Column containint three rows -->
+      <div class="IRMidTop"></div>
+      <div class="IRMidMid">
         <h1>Welcome!</h1>
         <p>On this website, I will showcase my development from an IT student to an accomplished software engineer. <br><br>Feel free to view or download my CV, or take a look through the About Me page. <br><br>A selection of my work will be available to view and interact with on the projects page. </p>
-        <button class="btnResume"><i class="fa fa-download">My CV</i></button>
+        <button class="btnResume" id="btnR" ><i class="fa fa-download">My CV</i></button> <!-- Button to allow cv download -->
       </div>
-      <div class="row middleB"></div>
+      <div class="IRMidBot"></div>
     </div>
-    <div class="column right">
+    <div class="IColRight">
     </div>
   </div>
+  <script src="main.js"></script> <!-- Link to javascript -->
 </body>
 </html>

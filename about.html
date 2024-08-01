@@ -9,10 +9,11 @@
   <link rel="icon" href="Visuals/faviconPort.ico">
 </head>
 <body>
+   <!-- Header Section -->
   <div id="header">
     <div class="container">
       <nav>
-        <ul>
+        <ul> <!-- Redirecting user to appropriate page -->
           <li><a href = "index.html">Home</a></li>
           <li><a href = "about.html">About Me</a></li>
           <li><a href = "projects.html">Projects</a></li>
@@ -22,24 +23,27 @@
     <div id = "aboutMe">
       <div class="container">
         <div class = "row">
+           <!-- Left Column with image -->
           <div class = "leftCol">
             <img src="Visuals/MCairns.jpg" alt="M Cairns">
           </div>
+           <!-- Right Column containing accordion -->
           <div class="rightCol">
             <div>
               <h1>About me</h1>
             </div>
             <div>
+               <!-- Accordion Section -->
               <button class="accordion">Information</button>
-              <div class="AbPanel">
-                <p>With a passion for continuous learning, I hope to expand my coding and design skills. I am eager to apply the academic knowledge in real-world scenarios and learn new skills along the way. I am excited to have the opportunity to work on a wide variety of projects.</p>
+              <div class="AbPanel">  <!-- Information Panel -->
+                <p>With a passion for continuous learning, I hope to expand my coding and design skills. I am eager to apply my academic knowledge in real-world scenarios and learn new skills along the way. I am excited to have the opportunity to work on a wide variety of projects.</p>
               </div>
               <button class="accordion">Education</button>
-              <div class="AbPanel">
+              <div class="AbPanel"><!-- Education Panel -->
                 <h2 style="font-weight: bold;">Bachelors of Science in Information Technology.</h2>
                 <h3 style="font-weight: bold;">North-West University</h3>
                 <p style="font-weight: bold;" >Relevant Coursework:<p>
-                <ul style="font-weight: lighter;">
+                <ul>
                   <li>Structured Programming </li>
                   <li>Object Oriented Programming</li>
                   <li>Apps and Advanced User Interface Programming</li>
@@ -51,10 +55,10 @@
                 </ul>
               </div>
               <button class="accordion">Skills</button>
-              <div class="AbPanel">
-                <div class="IGrid">
+              <div class="AbPanel"> <!-- Skills Panel -->
+                <div class="IGrid"> <!-- Skill Grid -->
                   <div class="IGItem"> 
-                    <i class="fa fa-clock-o"></i>
+                    <i class="fa fa-clock-o"></i> <!-- icons -->
                     <p>Time Management</p>
                   </div>
                   <div class="IGItem">
@@ -80,10 +84,11 @@
                 </div>
               </div>
               <button class="accordion">Experience</button>
-              <div class="AbPanel">
-                <h3>Jewls and Jems:Sales Assistant</h3>
-                <p>2019-2024</p>
-                <p> Responsibilities
+              <div class="AbPanel"> <!-- Experience Panel -->
+                <h2>Jewls and Jems:Sales Assistant</h3>
+                <h3>2019-2024</h3>
+                <h3> Responsibilities</h3>
+                <ul>  
                   <li>Maintained hygiene standards of the store.</li>
                   <li>Managed basic inventory.</li>
                   <li>Arranged jewellery displays.</li>
@@ -91,12 +96,12 @@
                   <li>Prepared and performed weekly cash deposits.</li>
                   <li>Coordinated staff schedules.</li>
                   <li>Performed minor adjustments to jewellery.</li>
-                </p>
+                </ul>
               </div> 
           </div>
         </div>
       </div>
     </div>
-    <script src="main.js"></script>
+    <script src="main.js"></script> <!-- Link page to the javascript file for functionality -->
 </body>
 </html>
