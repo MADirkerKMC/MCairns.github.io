@@ -9,6 +9,7 @@ body{
   background-image: url(Visuals/BackgroundTester.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 #header{
   width: 100%;
@@ -47,8 +48,8 @@ nav ul li a:hover::after{
   background-color: #936734;
   cursor: pointer;
   border: double;
-  width: 300px;
-  height: 100px;
+  width: 25vh;
+  height: 5vh;
   font-size: medium;
   padding-top: 1%;
   padding-left: 2%;
@@ -62,46 +63,6 @@ nav ul li a:hover::after{
   font-size: large;
   font-weight: bold;;
 }
-/*This page is divided as follows, one main row divided into 3 columns. The middle column contains a further 3 rows, with the main page content being present in the middle row.*/
-.IRow{
-  display: flex;
-  padding: 10px;
-  justify-content: space-between;
-}
-.IColLeft{ /*leftmost column*/
-  width: 300px;
-  flex-wrap: wrap;
-}
-.IColRight{ /*rightmost column*/
-  width: 300px;
-  flex-wrap: wrap;
-}
-.IColMid{ /*middle column*/
-  width: 900px;
-  flex-wrap: wrap;
-}
-.IRMidTop{ /*middle column top row*/
-  height: 50px;
-}
-.IRMidBot{ /*middle column bottom row*/
-  height: 50px;
-}
-.IRMidMid{ /*middle column middle row*/
-  background-color: #BAA481;
-  border: double;
-  border-radius: 5px;
-  padding: 5%;
-}
-.IColMid p{
-  padding: 15px;
-  font-size: x-large;
-  color: #4B3019;
-}
-.IColMid h1{
-  padding: 15px;
-  color: #000;
-}
-/*==================================About Me Section==================================*/
 #about{
   padding: 80px 0;
   color:#FFF1D6;
@@ -149,7 +110,29 @@ nav ul li a:hover::after{
 .AbPanel i{
   font-size: 50px;
 }
-
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.containerC {
+  padding: 1%;
+  background-color: #938d5d;
+  border-style: groove;
+  font-size: 2vh;
+  color: #2A3129;
+}
+.containerC a{
+  font-size: 3vh;
+  padding-top: 2%;
+  padding-left: 4vh;
+  padding-right: 4vh;; 
+}
+.containerC a:hover{
+  color: #2b0ebc;
+}
 /*A single row with two columns to display an image to the left and the accordion to the right*/
 .row{
   display: flex;
@@ -157,17 +140,17 @@ nav ul li a:hover::after{
   flex-wrap: wrap;
 }
 .rightCol{
-  flex-basis: 55%;
+  flex-basis: 65%;
   padding-left: 10px;
   padding-top: 10px;
 }
 .leftCol{
-  flex-basis: 45%;
-  padding-top: 10px;
+  flex-basis: 35%;
+  padding-top: 10%;
   padding-left: 60px;
 }
 .leftCol img{
-  width: 80%;
+  width: 60%;
   border-radius: 10px;
   border-style: ridge;
   border-color: blanchedalmond;
@@ -215,11 +198,13 @@ nav ul li a:hover::after{
   padding-top: 5%;
   padding-right: 5%;
 }
+
 /*================================== Responsiveness ==================================*/
 /* For mobile screens */
 @media screen and (max-width: 426px) {
   body{
     background-image: url(Visuals/NewBackground.png);
+    background-repeat: repeat;
   }
   /*Home Page*/
   .btnResume /*adjust the size of the button for smaller screens*/

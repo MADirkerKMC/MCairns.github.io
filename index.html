@@ -15,27 +15,103 @@
       <nav>
         <ul> <!-- Redirect user to appropriate page -->
           <li><a href = "index.html">Home</a></li>
-          <li><a href = "about.html">About Me</a></li>
           <li><a href = "projects.html">Projects</a></li>
         </ul>
       </nav>
     </div>
   </div>
-  <div class="IRow"> <!-- Row containing three columns -->
-    <div class = "IColLeft">
-    </div>
-    <div class="IColMid"> <!-- Column containint three rows -->
-      <div class="IRMidTop"></div>
-      <div class="IRMidMid">
-        <h1>Welcome!</h1>
-        <p>On this website, I will showcase my development from an IT student to an accomplished software engineer. <br><br>Feel free to view or download my CV, or take a look through the About Me page. <br><br>A selection of my work will be available to view and interact with on the projects page. </p>
-        <button class="btnResume" id="btnR" ><i class="fa fa-download">My CV</i></button> <!-- Button to allow cv download -->
+  <div id = "aboutMe">
+    <div class="container">
+      <div class = "row">
+         <!-- Left Column with image -->
+        <div class = "leftCol">
+          <div class="card">
+            <img src="Visuals/MCairns.jpg" alt="M Cairns" style="width:100%">
+            <div class="containerC">
+                <h4> Miceala Cairns</h4>
+                <p>BSc Information Technology Student</p>
+                <a href="www.linkedin.com/in/miceala-c-893286319" class="fa fa-linkedin"></a>
+                <a href="https://github.com/MADirkerKMC" class="fa fa-github"></a>
+                <button class="btnResume"><i class="fa fa-download">
+                </i> Download my CV</button>
+            </div>
+          </div>
+        </div>
+         <!-- Right Column containing accordion -->
+        <div class="rightCol">
+          <div>
+            <h1>About me</h1>
+          </div>
+          <div>
+             <!-- Accordion Section -->
+            <button class="accordion">Information</button>
+            <div class="AbPanel">  <!-- Information Panel -->
+              <p>With a passion for continuous learning, I hope to expand my coding and design skills. I am eager to apply my academic knowledge in real-world scenarios and learn new skills along the way. I am excited to have the opportunity to work on a wide variety of projects.</p>
+            </div>
+            <button class="accordion">Education</button>
+            <div class="AbPanel"><!-- Education Panel -->
+              <h2 style="font-weight: bold;">Bachelors of Science in Information Technology.</h2>
+              <h3 style="font-weight: bold;">North-West University</h3>
+              <p style="font-weight: bold;" >Relevant Coursework:<p>
+              <ul>
+                <li>Structured Programming </li>
+                <li>Object Oriented Programming</li>
+                <li>Apps and Advanced User Interface Programming</li>
+                <li>Systems Analysis and Design</li>
+                <li>Advanced Databases</li>
+                <li>IT Developments</li>
+                <li>Operating Systems</li>
+                <li>Computer Networks</li>
+              </ul>
+            </div>
+            <button class="accordion">Skills</button>
+            <div class="AbPanel"> <!-- Skills Panel -->
+              <div class="IGrid"> <!-- Skill Grid -->
+                <div class="IGItem"> 
+                  <i class="fa fa-clock-o"></i> <!-- icons -->
+                  <p>Time Management</p>
+                </div>
+                <div class="IGItem">
+                  <i class="fa fa-keyboard-o"></i>
+                  <p>Python</p>
+                </div>
+                <div class="IGItem">
+                  <i class="fa fa-desktop"></i>
+                  <p>C#</p>
+                </div>
+                <div class="IGItem">
+                  <i class="fa fa-server"></i>
+                  <p>SQL</p>
+                </div>
+                <div class="IGItem">
+                  <i class="fa fa-tv"></i>
+                  <p>Java</p>
+                </div>
+                <div class="IGItem">
+                  <i class="fa fa-microchip"></i>
+                  <p>C++</p>
+                </div>
+              </div>
+            </div>
+            <button class="accordion">Experience</button>
+            <div class="AbPanel"> <!-- Experience Panel -->
+              <h2>Jewls and Jems:Sales Assistant</h3>
+              <h3>2019-2024</h3>
+              <h3> Responsibilities</h3>
+              <ul>  
+                <li>Maintained hygiene standards of the store.</li>
+                <li>Managed basic inventory.</li>
+                <li>Arranged jewellery displays.</li>
+                <li>Recorded daily sales totals.</li>
+                <li>Prepared and performed weekly cash deposits.</li>
+                <li>Coordinated staff schedules.</li>
+                <li>Performed minor adjustments to jewellery.</li>
+              </ul>
+            </div> 
+        </div>
       </div>
-      <div class="IRMidBot"></div>
-    </div>
-    <div class="IColRight">
     </div>
   </div>
-  <script src="main.js"></script> <!-- Link to javascript -->
+  <script src="main.js"></script> <!-- Link page to the javascript file for functionality -->
 </body>
 </html>
