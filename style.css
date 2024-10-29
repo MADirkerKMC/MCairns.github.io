@@ -35,7 +35,7 @@ nav ul li a::after{
   content: '';
   width: 0;
   height: 5px;
-  background: grey;
+  background: #BAA481;
   position: absolute;
   transition: 0.8s;
   left: 0;
@@ -199,6 +199,32 @@ nav ul li a:hover::after{
   padding-right: 5%;
 }
 
+/*==================================Certificates page==================================*/
+.rowCC{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.columnCC{
+  width: 50%;
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-right: 5%;
+  border-width: 1;
+  border-color: #4B3019;
+  border-style: solid;
+  background-color: rgba(186, 164, 129, 0.5);
+  text-align: left;
+  vertical-align: top;
+}
+label{
+  font-size: medium;
+}
+input[type="checkbox"]{
+  width: 15%;
+  height: 15%;
+  transform: scale(1.5);
+}
 /*================================== Responsiveness ==================================*/
 /* For mobile screens */
 @media screen and (max-width: 426px) {
@@ -259,6 +285,19 @@ nav ul li a:hover::after{
     width: 90%;
     padding-left: 8%;
   }
+  .columnCC h2{
+    font-size: 2vh;
+    color: #000;
+  }
+  label{
+    color: #000;
+    font-size: smaller;
+  }
+  input[type="checkbox"]{
+    width: 8%;
+    height: 8%;
+    transform: scale(1.5);
+  }
 }
 @media screen and (max-width:768px) {
   /*About Page*/
@@ -281,5 +320,8 @@ nav ul li a:hover::after{
   }
   .column1P{
     padding: 3%;
+  }
+  .rowCC h1{
+    color: #000;
   }
 }
