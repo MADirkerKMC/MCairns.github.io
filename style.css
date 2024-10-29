@@ -44,7 +44,7 @@ nav ul li a::after{
 nav ul li a:hover::after{
   width: 100%;
 }
-.btnR{ /*style the button*/
+.btnResume{ /*style the button*/
   background-color: #936734;
   cursor: pointer;
   border: double;
