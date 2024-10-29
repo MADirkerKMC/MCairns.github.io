@@ -20,7 +20,7 @@ for(var i = 0; i<AbAcc.length; i++)
 }
 
 //=========================Resume Button=====================//
-document.getElementById('btnR').addEventListener('click', function(){
+document.getElementById('btnResume').addEventListener('click', function(){
   const resume = document.createElement('a');
   resume.href = 'Visuals/MACairnsCV.pdf'; //the path to the file 
   resume.download = 'MACairnsCV.pdf'; //name of file
